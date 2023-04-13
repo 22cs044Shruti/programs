@@ -3,16 +3,13 @@ using namespace std;
 
 int main() {
 	// your code goes here
-	int T,X,Y;
-	cin>>T;
-	for(int i=0;i<T;i++){
-	    cin>>X>>Y;
-	    if(Y>(X*0.05)){
-	        cout<<"YES"<<endl;
-	    }
-	    else{
-	        cout<<"NO"<<endl;
-	    }
+	int A,B,C,X;
+	cin>>A>>B>>C>>X;
+	if(X==A || X==B || X==C){
+	    cout<<"YES"<<endl;
+	}
+	else{
+	    cout<<"NO"<<endl;
 	}
 	return 0;
 }

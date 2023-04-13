@@ -6,7 +6,6 @@ public:
     float inches;
     float scale_factor;
     void scale(){
-
         feet=feet*scale_factor;
         inches=inches*scale_factor;
 
@@ -16,13 +15,10 @@ public:
         feet=feet+1;
         }
     }
-
-
     cout<<"Distance is: "<<feet<<"'"<<inches<<"\""<<endl;
-
     }
 
-    void display(){
+    void display(Dist &D2){
 
     cout<<"Distance in feet: ";
     cin>>feet;
@@ -33,10 +29,11 @@ public:
     scale();
     }
 
+
 };
+
 int main(){
-    Dist D1,&D2=D1;
-    D1.display();
-    D2.display();
+  Dist D1;
+  D1.display(D1);
 }
 
